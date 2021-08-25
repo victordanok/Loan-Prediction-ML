@@ -34,15 +34,19 @@ The columns in the dataset are:
 11. Property_Area          
 12. Loan_Status       
 
+## Feature engineering
+Taking the input of ApplicantIncome and CoApplicantIncome, the sum was used to calculate the Total Income of the household
+Adding this feature to the data increases the accuracy and precision of the models.
+
 ## Model Performance
-1. Logistic Regression has an accuracy of 0.83, hence the best performing model.
+1. Logistic Regression has an accuracy of 0.84.
 2. Naive Bayes has an overall accuracy of 0.82.
-3. Random Forest has an overall accuracy of 0.74
+3. Random Forest has an overall accuracy of 0.78 using GridSearchCV
 4. Decision Trees has an overall accuracy of 0.71
-5. K - Nearest Neighbors has an overall accuracy of 0.72
 
 ## API Development
-
+A streamlit app is being built to collect inputs on gender, marital status, number of kids, total income, emloyment status, credit history, and property area.
+After accepting these inputs, the model will be run using the best number of estimators and max depth to ensure the highest accuracy for prediction.
 
 
 
